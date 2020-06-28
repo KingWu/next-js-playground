@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
+    "@material-ui/core": "4.10.2",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "9.4.4"
   }
 }
