@@ -7,7 +7,3 @@
 /* purgecss end ignore */
 
 @import "tailwindcss/utilities";
-
-body {
-  @apply bg-primary p-12;
-}

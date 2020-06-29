@@ -9,6 +9,7 @@ export default () => (
     </Head>
 
     <main>
+      <p className={styles.test}>Test</p>
       <h1 className="title">
         Welcome to <a href="https://nextjs.org">Hello World</a>
       </h1>
