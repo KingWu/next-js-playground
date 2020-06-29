@@ -1,9 +1,13 @@
+@import './variables.css';
+
+/* Tailwind Css */
 /* purgecss start ignore */
-@tailwind base;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
 /* purgecss end ignore */
-@tailwind components;
-@tailwind utilities;
+
+@import "tailwindcss/utilities";
 
 body {
-  @apply bg-red-500 p-12;
+  @apply bg-primary p-12;
 }

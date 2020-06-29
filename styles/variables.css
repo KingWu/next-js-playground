@@ -1,0 +1,10 @@
+/* Define Theme Variables */
+:root {
+  --primary-color: #388cdd;
+  --secondary-color: #988cdd;
+}
+
+.theme-dark {
+  --primary-color: #FF6000;
+  --secondary-color: #98FFdd;
+}
