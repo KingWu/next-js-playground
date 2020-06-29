@@ -1,5 +1,6 @@
 .home {
   @apply bg-background p-12 text-on-background;
+  height: 100vh;
 }
 
 .test {
