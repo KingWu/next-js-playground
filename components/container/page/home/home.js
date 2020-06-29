@@ -1,7 +1,8 @@
 import Head from 'next/head'
+import styles from './home.module.css'
 
 export default () => (
-  <div className="container">
+  <div className={`container ${styles.home}`}>
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
