@@ -9,11 +9,11 @@ module.exports = {
       background: 'var(--background-color)',
       surface: 'var(--surface-color)',
       error: 'var(--error-color)',
-      'on-primary': 'var(--on-primary-color)',
-      'on-secondary': 'var(--on-secondary-color)',
+      'on-primary': 'rgba(var(--on-primary-color), var(--text-opacity))',
+      'on-secondary': 'rgba(var(--on-secondary-color), var(--text-opacity))',
       'on-background': 'rgba(var(--on-background-color), var(--text-opacity))',
-      'on-surface': 'var(--on-surface-color)',
-      'on-error': 'var(--on-error-color)',
+      'on-surface': 'rgba(var(--on-surface-color), var(--text-opacity))',
+      'on-error': 'rgba(var(--on-error-color), var(--text-opacity))',
     },
     extend: {
       textOpacity: {
