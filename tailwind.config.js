@@ -20,7 +20,12 @@ module.exports = {
         'normal': '0.87',
         'medium': '0.6',
         'disabled': '0.38'
-      }
+      },
+      /** Breakpoints */
+      screens: {
+        desktop: { min: '960px' },
+        mobile: { max: '959px' },
+      },
     },
   },
   variants: {},

@@ -11,3 +11,12 @@
     @apply text-on-background text-opacity-disabled;
   }
 }
+
+@screen mobile {
+  .test-div {
+    & .test {
+      @apply bg-error;
+      @apply text-on-background text-opacity-disabled;
+    }
+  }
+}
