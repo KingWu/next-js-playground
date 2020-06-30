@@ -7,3 +7,11 @@
 /* purgecss end ignore */
 
 @import "tailwindcss/utilities";
+
+
+.app {
+  @apply bg-background;
+}
+.page {
+  @apply w-full mx-auto;
+}

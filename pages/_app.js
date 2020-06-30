@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo';
+import DefaultLayout from 'components/presenter/layouts/DefaultLayout'
 import 'styles/base.css'
 
 export default function MyApp({ Component, pageProps }) {
+  const Layout = Component.Layout || DefaultLayout
+
   return (
-    <div className="theme-dark">
+    <div className="app theme-dark">
       <DefaultSeo
           title='Hello World'
           description='This nextjs example.'
@@ -24,7 +27,9 @@ export default function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </div>
   )
 }

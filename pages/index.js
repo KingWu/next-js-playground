@@ -1,7 +1,8 @@
 import { NextSeo } from 'next-seo';
 import Home from 'components/container/page/home'
+import HomeLayout from 'components/presenter/layouts/HomeLayout'
 
-export default () => (
+const HomePage = () => (
   <>
     <NextSeo
       title="Home Page2"
@@ -10,3 +11,7 @@ export default () => (
     <Home />
   </>
 )
+
+HomePage.Layout = HomeLayout
+
+export default HomePage
