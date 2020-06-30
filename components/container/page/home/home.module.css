@@ -83,6 +83,11 @@
   }
 }
 
+.btn-toogle {
+  @apply px-2 py-1 rounded;
+  @apply bg-primary text-on-primary;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

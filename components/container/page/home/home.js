@@ -1,6 +1,9 @@
+import { useThemeContext } from 'store/theme/themeStore'
 import styles from './home.module.css'
 
 export default () => {
+  const { state, onToggleTheme } = useThemeContext()
+  const buttonContent = state.mode === 'dark' ? 'Light Mode' : 'Dark Mode'
   return (
     <div className={`container page ${styles.home}`}>
       <h1 className={styles.title}>
@@ -40,6 +43,10 @@ export default () => {
           </p>
         </a>
       </div>
+      <button className={styles['btn-toogle']}
+              onClick={onToggleTheme}>
+        {buttonContent}
+        </button>
     </div>
   )
 }
