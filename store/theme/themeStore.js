@@ -13,7 +13,7 @@ const actionTypes = {
   toggle: 'toggle',
 }
 
-const createThemeStore = () => {
+const createThemeStore = (initState) => {
   return useReducer(themeReducer, initState)
 }
 
@@ -30,7 +30,7 @@ const themeReducer = (state, action) => {
 
 export const ThemeProvider = ({children}) => {
   return (
-    <ThemeContext.Provider value={createThemeStore()}>
+    <ThemeContext.Provider value={createThemeStore(initState)}>
       {children}
     </ThemeContext.Provider>
   )
