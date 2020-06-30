@@ -4,10 +4,9 @@ import Footer from 'components/presenter/navigation/Footer'
 const HomeLayout = ({ children }) => (
   <>
     <Header/>
-    <div>Home</div>
-    <div className="main">
+    <main className="main">
       {children}
-    </div>
+    </main>
     <Footer/>    
   </>
 );

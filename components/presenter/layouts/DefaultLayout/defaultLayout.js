@@ -4,7 +4,7 @@ import Footer from 'components/presenter/navigation/Footer'
 const DefaultLayout = ({ children }) => (
   <>
     <Header/>
-    <div className="main">{children}</div>
+    <main className="main">{children}</main>
     <Footer/>    
   </>
 );
