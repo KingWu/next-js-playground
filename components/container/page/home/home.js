@@ -1,13 +1,8 @@
-import Head from 'next/head'
 import styles from './home.module.css'
 
 export default () => {
   return (
     <div className={`container ${styles.home}`}>
-      <Head>
-        <title>Home Page</title>
-      </Head>
-
       <main>
         <div className={styles['test-div']}>
           <p className={styles.test}>Test</p>
