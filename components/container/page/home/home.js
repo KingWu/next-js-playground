@@ -5,8 +5,7 @@ export default () => {
   return (
     <div className={`container ${styles.home}`}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Home Page</title>
       </Head>
 
       <main>
