@@ -1,0 +1,36 @@
+/* Define Theme Variables */
+:root {
+  --primary-color: #6020EE;
+  --primary-dark-color: #3700B3;
+  --secondary-color: #03DAC6;
+  --secondary-dark-color: #018786;
+  --background-color: #FFFFFF;
+  --surface-color: #FFFFFF;
+  --error-color: #B00020;
+
+  /* Typography and iconography colors */
+  --on-primary-color: #FFFFFF;
+  --on-secondary-color: #FFFFFF;
+  --on-background-color: #000020;
+  --on-surface-color: #000020;
+  --on-error-color: #FFFFFF;
+
+  --text-opacity: 1;
+}
+
+.theme-dark {
+  --primary-color: #BB86FC;
+  --primary-dark-color: #3700B3;
+  --secondary-color: #03DAC6;
+  --secondary-dark-color: #03DAC6;
+  --background-color: #121212;
+  --surface-color: #121212;
+  --error-color: #CF6679;
+
+  /* Typography and iconography colors */
+  --on-primary-color: #000000;
+  --on-secondary-color: #000000;
+  --on-background-color: 255,255,255; /* #FFFFFF */
+  --on-surface-color: #FFFFFF;
+  --on-error-color: #000000;
+}

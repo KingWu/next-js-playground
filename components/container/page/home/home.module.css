@@ -1,0 +1,22 @@
+.home {
+  @apply bg-background p-12 text-on-background;
+
+  & .test {
+    @apply text-on-background text-opacity-normal;
+  }
+}
+
+.test-div {
+  & .test {
+    @apply text-on-background text-opacity-disabled;
+  }
+}
+
+@screen mobile {
+  .test-div {
+    & .test {
+      @apply bg-error;
+      @apply text-on-background text-opacity-disabled;
+    }
+  }
+}
