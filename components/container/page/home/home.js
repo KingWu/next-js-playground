@@ -14,6 +14,7 @@ export default () => {
           <p className={styles.test}>Test</p>
         </div>
         <p className={styles.test}>Test</p>
+        <button className={styles.button}>Button</button>
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Hello World</a>
         </h1>

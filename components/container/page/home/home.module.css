@@ -12,6 +12,11 @@
   }
 }
 
+.button {
+  @apply text-body1;
+  @apply text-error;
+}
+
 @screen mobile {
   .test-div {
     & .test {
