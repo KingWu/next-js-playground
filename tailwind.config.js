@@ -1,3 +1,61 @@
+const plugin = require('tailwindcss/plugin')
+
+/* Custom Text Style */
+const textStyle = {
+  '.text-h1': {
+    fontSize: '35px',
+    fontWeight: '300',
+  },
+  '.text-h2': {
+    fontSize: '29px',
+    fontWeight: '300',
+  },
+  '.text-h3': {
+    fontSize: '24px',
+    fontWeight: '400',
+  },
+  '.text-h4': {
+    fontSize: '20px',
+    fontWeight: '400',
+  },
+  '.text-h5': {
+    fontSize: '20px',
+    fontWeight: '400',
+  },
+  '.text-h6': {
+    fontSize: '18px',
+    fontWeight: '500',
+  },
+  '.text-subt1': {
+    fontSize: '17px',
+    fontWeight: '400',
+  },
+  '.text-subt2': {
+    fontSize: '14px',
+    fontWeight: '500',
+  },
+  '.text-body1': {
+    fontSize: '17px',
+    fontWeight: '400',
+  },
+  '.text-body2': {
+    fontSize: '14px',
+    fontWeight: '400',
+  },
+  '.text-button': {
+    fontSize: '14px',
+    fontWeight: '500',
+  },
+  '.text-caption': {
+    fontSize: '12px',
+    fontWeight: '400',
+  },
+  '.text-overline': {
+    fontSize: '10px',
+    fontWeight: '400',
+  },
+}
+
 module.exports = {
   purge: [],
   theme: {
@@ -29,5 +87,9 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    plugin(function({ addUtilities }) {
+      addUtilities(textStyle)
+    })
+  ],
 }
