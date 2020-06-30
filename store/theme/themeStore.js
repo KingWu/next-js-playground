@@ -1,6 +1,6 @@
 import React, {useReducer, useContext} from 'react';
-export const ThemeContext = React.createContext({})
-export const ThemeProvider = ThemeContext.Provider
+
+const ThemeContext = React.createContext({})
 
 export const themeLightMode = 'light'
 export const themeDarkMode = 'dark'
@@ -13,6 +13,10 @@ const actionTypes = {
   toggle: 'toggle',
 }
 
+const createThemeStore = () => {
+  return useReducer(themeReducer, initState)
+}
+
 const themeReducer = (state, action) => {
   switch (action.type) {
     case actionTypes.toggle:
@@ -22,10 +26,14 @@ const themeReducer = (state, action) => {
     default:
       throw new Error('Unexpected action');
   }
-};
+}
 
-export const createThemeStore = () => {
-  return useReducer(themeReducer, initState)
+export const ThemeProvider = ({children}) => {
+  return (
+    <ThemeContext.Provider value={createThemeStore()}>
+      {children}
+    </ThemeContext.Provider>
+  )
 }
 
 export const useThemeContext = () => {
