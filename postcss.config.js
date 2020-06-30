@@ -21,8 +21,9 @@ const plugins = process.env.NODE_ENV === 'production'
   
 module.exports = {
   plugins: [
-    'tailwindcss',
     'postcss-import',
+    'tailwindcss',
+    'postcss-nested',
     ...plugins,
   ]
 }

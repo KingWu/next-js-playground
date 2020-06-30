@@ -1,8 +1,13 @@
 .home {
   @apply bg-background p-12 text-on-background;
-  height: 100vh;
+
+  & .test {
+    @apply text-on-background text-opacity-normal;
+  }
 }
 
-.test {
-  @apply text-on-background text-opacity-disabled;
+.test-div {
+  & .test {
+    @apply text-on-background text-opacity-disabled;
+  }
 }
