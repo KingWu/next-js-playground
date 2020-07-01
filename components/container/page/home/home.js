@@ -1,9 +1,9 @@
-import { useThemeContext } from 'store/theme/themeStore'
+import { themeDarkMode, useThemeContext } from 'store/theme/themeStore'
 import styles from './home.module.css'
 
 export default () => {
   const { state, onToggleTheme } = useThemeContext()
-  const buttonContent = state.mode === 'dark' ? 'Light Mode' : 'Dark Mode'
+  const buttonContent = state.mode === themeDarkMode ? 'Light Mode' : 'Dark Mode'
   return (
     <div className={`container page ${styles.home}`}>
       <h1 className={styles.title}>

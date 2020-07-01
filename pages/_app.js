@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo';
-import { ThemeProvider, createThemeStore } from 'store/theme/themeStore'
+import { ThemeProvider } from 'store/theme/themeStore'
 import Theme from 'components/container/theme/Theme'
 import DefaultLayout from 'components/presenter/layouts/DefaultLayout'
 import 'styles/base.css'
@@ -9,7 +9,7 @@ export default function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout || DefaultLayout
 
   return (
-    <ThemeProvider value={createThemeStore()}>
+    <ThemeProvider>
       <Theme>
         <DefaultSeo
             title='Hello World'

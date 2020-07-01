@@ -1,30 +1,45 @@
 import React, {useReducer, useContext} from 'react';
-export const ThemeContext = React.createContext({})
-export const ThemeProvider = ThemeContext.Provider
+
+const ThemeContext = React.createContext({})
+
+export const themeLightMode = 'light'
+export const themeDarkMode = 'dark'
 
 const initState = {
-  mode: 'light'
+  mode: themeLightMode
+}
+
+const actionTypes = {
+  toggle: 'toggle',
+}
+
+const createThemeStore = (initState) => {
+  return useReducer(themeReducer, initState)
 }
 
 const themeReducer = (state, action) => {
   switch (action.type) {
-    case 'toggle':
+    case actionTypes.toggle:
       return {
-        mode: state.mode === 'dark' ? 'light' : 'dark',
+        mode: state.mode === themeLightMode ? themeDarkMode : themeLightMode,
       }
     default:
       throw new Error('Unexpected action');
   }
-};
+}
 
-export const createThemeStore = () => {
-  return useReducer(themeReducer, initState)
+export const ThemeProvider = ({children}) => {
+  return (
+    <ThemeContext.Provider value={createThemeStore(initState)}>
+      {children}
+    </ThemeContext.Provider>
+  )
 }
 
 export const useThemeContext = () => {
   const [state, dispatch] = useContext(ThemeContext)
   return {
       state: state,
-      onToggleTheme: () => dispatch({type : 'toggle'})
+      onToggleTheme: () => dispatch({type : actionTypes.toggle})
   }
 }

@@ -1,8 +1,8 @@
-import { useThemeContext } from 'store/theme/themeStore'
+import { themeDarkMode, useThemeContext } from 'store/theme/themeStore'
 
 const Theme = ({children}) => {
   const { state } = useThemeContext()
-  const themeMode = state.mode === 'dark' ? 'theme-dark' : ''
+  const themeMode = state.mode === themeDarkMode ? 'theme-dark' : ''
   return (
     <div className={`app ${themeMode}`}>
       {children}
