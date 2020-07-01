@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <div className={`container page ${styles.home}`}>
       <h1 className={styles.title}>
-        Welcome to 
-        <a href="https://nextjs.org">Hello World</a>
+        Welcome to
+        <a href="https://nextjs.org"> Hello World</a>
       </h1>
 
       <p className={styles.description}>
