@@ -13,6 +13,6 @@ const HomeLayout = ({ children }) => (
 )
 
 HomeLayout.propTypes = {
-  children: PropTypes.element.isRequired
+  children: PropTypes.node.isRequired
 }
 export default HomeLayout

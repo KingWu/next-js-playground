@@ -42,9 +42,7 @@ const MyApp = ({ Component, pageProps }) => {
 }
 
 MyApp.propTypes = {
-  Component: PropTypes.shape({
-    Layout: PropTypes.element
-  }).isRequired,
+  Component: PropTypes.func.isRequired,
   pageProps: PropTypes.object.isRequired
 }
 
