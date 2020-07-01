@@ -2,17 +2,19 @@ import { useStore, themeStoreId } from 'store'
 import { themeDarkMode } from 'store/theme'
 import styles from './home.module.css'
 
-export default () => {
+const Home = () => {
   const { state, actions } = useStore(themeStoreId)
   const buttonContent = state.mode === themeDarkMode ? 'Light Mode' : 'Dark Mode'
   return (
     <div className={`container page ${styles.home}`}>
       <h1 className={styles.title}>
-        Welcome to <a href="https://nextjs.org">Hello World</a>
+        Welcome to 
+        <a href="https://nextjs.org">Hello World</a>
       </h1>
 
       <p className={styles.description}>
-        Get started by editing <code>pages/index.js</code>
+        Get started by editing 
+        <code>pages/index.js</code>
       </p>
 
       <div className={styles.grid}>
@@ -44,10 +46,14 @@ export default () => {
           </p>
         </a>
       </div>
-      <button className={styles['btn-toogle']}
-              onClick={actions.onToggleTheme}>
+      <button
+        type="button"
+        className={styles['btn-toogle']}
+        onClick={actions.onToggleTheme}
+      >
         {buttonContent}
-        </button>
+      </button>
     </div>
   )
 }
+export default Home

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { useStore, themeStoreId } from 'store'
 import { themeDarkMode } from 'store/theme'
 
@@ -10,4 +11,8 @@ const Theme = ({children}) => {
     </div>
   )
 }
+Theme.propTypes = {
+  children: PropTypes.element.isRequired
+}
+
 export default Theme

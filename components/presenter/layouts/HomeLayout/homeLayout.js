@@ -1,14 +1,18 @@
+import PropTypes from 'prop-types'
 import Header from 'components/presenter/navigation/Header'
 import Footer from 'components/presenter/navigation/Footer'
 
 const HomeLayout = ({ children }) => (
   <>
-    <Header/>
+    <Header />
     <main className="main">
       {children}
     </main>
-    <Footer/>    
+    <Footer />    
   </>
-);
+)
 
-export default HomeLayout;
+HomeLayout.propTypes = {
+  children: PropTypes.element.isRequired
+}
+export default HomeLayout
