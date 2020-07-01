@@ -12,7 +12,7 @@ const Theme = ({children}) => {
   )
 }
 Theme.propTypes = {
-  children: PropTypes.element.isRequired
+  children: PropTypes.node.isRequired
 }
 
 export default Theme
