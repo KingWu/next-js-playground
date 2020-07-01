@@ -1,15 +1,17 @@
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo';
-import { ThemeProvider } from 'store/theme/themeStore'
+import { initStores, StoreProvider } from 'store'
 import Theme from 'components/container/theme/Theme'
 import DefaultLayout from 'components/presenter/layouts/DefaultLayout'
 import 'styles/base.css'
+
+initStores()
 
 export default function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout || DefaultLayout
 
   return (
-    <ThemeProvider>
+    <StoreProvider>
       <Theme>
         <DefaultSeo
             title='Hello World'
@@ -34,6 +36,6 @@ export default function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </Layout>
       </Theme>
-    </ThemeProvider>
+    </StoreProvider>
   )
 }
