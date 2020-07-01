@@ -1,4 +1,3 @@
-import { useStore } from 'store'
 export const themeLightMode = 'light'
 export const themeDarkMode = 'dark'
 
@@ -21,11 +20,11 @@ const reducer = (state, action) => {
   }
 }
 
-const actions = ({dispatch}) => {
-  return {
-    onToggleTheme: () => dispatch({type : actionTypes.toggle})
+const actions = ({ dispatch }) => ({
+  onToggleTheme: () => {
+    dispatch({type : actionTypes.toggle})
   }
-}
+})
 
 export const themeStore = {
   initState,
