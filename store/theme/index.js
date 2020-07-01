@@ -16,7 +16,7 @@ const reducer = (state, action) => {
         mode: state.mode === themeLightMode ? themeDarkMode : themeLightMode,
       }
     default:
-      throw new Error('Unexpected action');
+      throw new Error('Unexpected action')
   }
 }
 
