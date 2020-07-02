@@ -44,6 +44,7 @@ const reducer = (state, action) => {
  * @property {Function} onToggleTheme - Toogle theme mode
  */
 
+ /** @type {import('lib/store').StoreActionsInterface} */
 const actions = ({ dispatch }) => ({
   onToggleTheme: () => {
     dispatch({type : actionTypes.toggle})
