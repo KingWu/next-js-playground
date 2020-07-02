@@ -8,8 +8,9 @@
     "start": "next start",
     "export": "next build && next export",
     "analyzer": "ANALYZE=true next build",
-    "lint": "eslint ./components/** ./pages/** ./stores/** ./lib/** ./util/** ./api/** -c .eslintrc.json --ext js,jsx",
-    "lint-fix": "eslint ./components/** ./pages/** ./stores/** ./lib/** ./util/** ./api/** -c .eslintrc.json --fix --ext js,jsx"
+    "lint:js": "eslint ./components/** ./pages/** ./stores/** ./lib/** ./util/** ./api/** -c .eslintrc.json --ext js,jsx",
+    "lint:js-fix": "eslint ./components/** ./pages/** ./stores/** ./lib/** ./util/** ./api/** -c .eslintrc.json --fix --ext js,jsx",
+    "lint:css": "stylelint {components,pages,styles}/**/*.css"
   },
   "dependencies": {
     "next": "9.4.4",
@@ -34,6 +35,10 @@
     "postcss-import": "12.0.1",
     "postcss-nested": "4.2.1",
     "postcss-preset-env": "6.7.0",
+    "stylelint": "13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-scss": "^3.18.0",
     "tailwindcss": "1.4.6"
   }
 }
