@@ -1,12 +1,14 @@
+/** @type {string} */
 export const themeLightMode = 'light'
+/** @type {string} */
 export const themeDarkMode = 'dark'
 
 /**
  * Theme Store
  * 
  * @typedef {object} ThemeStore
- * @property {ThemeState} state Theme state
- * @property {ThemeAction} actions Theme actions
+ * @property {ThemeState} state - Theme state
+ * @property {ThemeAction} actions - Theme actions
  * */
 
 
@@ -14,7 +16,7 @@ export const themeDarkMode = 'dark'
  * Theme State
  * 
  * @typedef {object} ThemeState
- * @property {string} mode Theme mode {dark|light}
+ * @property {string} mode - Theme mode {dark|light}
  */
 const initState = {
   mode: themeLightMode
@@ -39,7 +41,7 @@ const reducer = (state, action) => {
  * Theme Actions
  * 
  * @typedef {object} ThemeAction
- * @property {Function} onToggleTheme Reducer function
+ * @property {Function} onToggleTheme - Toogle theme mode
  */
 
 const actions = ({ dispatch }) => ({
