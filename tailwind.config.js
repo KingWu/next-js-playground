@@ -58,7 +58,10 @@ const textStyle = {
 }
 
 module.exports = {
-  purge: [],
+  purge: [
+    './pages/**/*.js',
+    './components/**/*.js',
+  ],
   theme: {
     colors: {
       primary: 'var(--primary-color)',
