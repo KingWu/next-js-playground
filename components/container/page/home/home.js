@@ -50,7 +50,7 @@ const Home = () => {
       <button
         type="button"
         className={styles['btn-toogle']}
-        onClick={actions.onToggleTheme()}
+        onClick={() => actions.onToggleTheme()}
       >
         {buttonContent}
       </button>
