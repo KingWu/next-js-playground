@@ -1,5 +1,5 @@
-import { useStore, themeStoreId } from 'store'
-import { themeDarkMode } from 'store/theme'
+import { useStore, themeStoreId } from 'stores'
+import { themeDarkMode } from 'stores/theme'
 import styles from './home.module.css'
 
 const Home = () => {

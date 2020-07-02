@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import { useStore, themeStoreId } from 'store'
-import { themeDarkMode } from 'store/theme'
+import { useStore, themeStoreId } from 'stores'
+import { themeDarkMode } from 'stores/theme'
 
 const Theme = ({children}) => {
   const { state } = useStore(themeStoreId)

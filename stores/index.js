@@ -1,4 +1,4 @@
-import { themeStore } from 'store/theme'
+import { themeStore } from 'stores/theme'
 import { createStore, useStore as _useStore, StoreProvider as _StoreProvider } from 'lib/store'
 
 export const useStore = _useStore

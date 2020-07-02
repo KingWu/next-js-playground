@@ -89,6 +89,7 @@ module.exports = {
   },
   variants: {},
   plugins: [
+    // eslint-disable-next-line func-names
     plugin(function({ addUtilities }) {
       addUtilities(textStyle)
     })

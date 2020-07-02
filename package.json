@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "analyzer": "ANALYZE=true next build",
-    "lint": "eslint ./components/** ./pages/** ./store/** ./lib/** ./util/** ./api/** -c .eslintrc.json --ext js,jsx",
-    "lint-fix": "eslint ./components/** ./pages/** ./store/** ./lib/** ./util/** ./api/** -c .eslintrc.json --fix --ext js,jsx"
+    "lint": "eslint ./components/** ./pages/** ./stores/** ./lib/** ./util/** ./api/** -c .eslintrc.json --ext js,jsx",
+    "lint-fix": "eslint ./components/** ./pages/** ./stores/** ./lib/** ./util/** ./api/** -c .eslintrc.json --fix --ext js,jsx"
   },
   "dependencies": {
     "next": "9.4.4",
