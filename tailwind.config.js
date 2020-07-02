@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 const plugin = require('tailwindcss/plugin')
 
 /* Custom Text Style */
@@ -57,7 +58,10 @@ const textStyle = {
 }
 
 module.exports = {
-  purge: [],
+  purge: [
+    './pages/**/*.js',
+    './components/**/*.js',
+  ],
   theme: {
     colors: {
       primary: 'var(--primary-color)',
@@ -88,6 +92,7 @@ module.exports = {
   },
   variants: {},
   plugins: [
+    // eslint-disable-next-line func-names
     plugin(function({ addUtilities }) {
       addUtilities(textStyle)
     })

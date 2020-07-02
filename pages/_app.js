@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
-import { initStores, StoreProvider } from 'store'
+import { initStores, StoreProvider } from 'stores'
 import Theme from 'components/container/theme/Theme'
 import DefaultLayout from 'components/presenter/layouts/DefaultLayout'
 import 'styles/base.css'
@@ -39,11 +38,6 @@ const MyApp = ({ Component, pageProps }) => {
       </Theme>
     </StoreProvider>
   )
-}
-
-MyApp.propTypes = {
-  Component: PropTypes.func.isRequired,
-  pageProps: PropTypes.object.isRequired
 }
 
 export default MyApp
