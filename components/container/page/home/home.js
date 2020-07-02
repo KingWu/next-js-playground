@@ -3,6 +3,7 @@ import { themeDarkMode } from 'stores/theme'
 import styles from './home.module.css'
 
 const Home = () => {
+  /** @type {import('stores/theme').ThemeStore} */
   const { state, actions } = useStore(themeStoreId)
   const buttonContent = state.mode === themeDarkMode ? 'Light Mode' : 'Dark Mode'
   return (
@@ -49,7 +50,7 @@ const Home = () => {
       <button
         type="button"
         className={styles['btn-toogle']}
-        onClick={actions.onToggleTheme}
+        onClick={actions.onToggleTheme()}
       >
         {buttonContent}
       </button>
