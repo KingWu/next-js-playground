@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 const plugin = require('tailwindcss/plugin')
 
 /* Custom Text Style */

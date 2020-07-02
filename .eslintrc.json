@@ -7,6 +7,7 @@
   },
   "parser": "babel-eslint",
   "extends": [
+    "plugin:jsdoc/recommended",
     "eslint:recommended",
     "airbnb",
     "airbnb/hooks",
@@ -42,7 +43,7 @@
       "version": "detect"
     }
   },
-  "plugins": ["react", "react-hooks"],
+  "plugins": ["react", "react-hooks", "jsdoc"],
   "rules": {
     "semi": [2, "never"],
     // NextJs specific fix: suppress errors for missing 'import React' in files for nextjs
