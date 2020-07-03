@@ -31,6 +31,10 @@ const MyApp = ({ Component, pageProps }) => {
         />
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Roboto"
+            rel="stylesheet"
+          />
         </Head>
         <Layout>
           <Component {...pageProps} />
